@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Userlist */
+
+.userlist {
+  list-style-type: none;
+  max-width: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.userlist_item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:last-child {
+    border: none;
+  }
+}
+
+.userlist_item_controls {
+  display: flex;
+}
+
+.userlist_item_controls_btn {
+  border: 1px solid #ddd;
+  background-color: #eee;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 5px;
+  transition: all .2s ease-in-out;
+  &.remove_user_btn {
+    color: crimson;
+  }
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.userlist_controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .btn {
+    margin: 10px;
+  }
+}
+
+
+/* End of Userlist*/
+
+/* New User form */
+.user_form {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  .form-control {
+    margin: 10px 0;
+  }
+
+  .form_control_wrap {
+    position: relative;
+    z-index: 2;
+    &:after {
+      position: absolute;
+      content: 'All fields are required.';
+      color:crimson;
+      font-size: 12px;
+      display: block;
+      z-index: -1;
+      right: 0;
+      bottom: 0px;
+      transition: all .3s ease-in-out;
+    }
+
+    &.error:after {
+      bottom: -20px;
+    }
+  }
+}
+
+.create_new_user {
+  margin: 40px auto 0;
+  display: block;
+}
+
+/* End of New User form */
