@@ -62,7 +62,7 @@ class App extends Component {
           <input id="description" className="form-control" type="text" autoComplete="off" defaultValue={user.desc} placeholder="Description" aria-label="Description"></input>
           <button className="btn btn-primary create_new_user" onClick={this.updateUser}>Update user</button>
         </div>
-        <button className="btn btn-info" onClick={this.checkState}>Check State</button>
+        {/* <button className="btn btn-info" onClick={this.checkState}>Check State</button> */}
       </div>
     )
   }

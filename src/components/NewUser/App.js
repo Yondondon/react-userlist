@@ -65,7 +65,7 @@ class App extends Component {
           <button className="btn btn-primary create_new_user" onClick={this.createNewUser}>Create New User</button>
         </div>
         <br />
-        <button className="btn btn-info" onClick={this.checkState}>Check State</button>
+        {/* <button className="btn btn-info" onClick={this.checkState}>Check State</button> */}
       </div>
     )
   }

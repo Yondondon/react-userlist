@@ -47,7 +47,7 @@ class Main extends Component {
           <button className="btn btn-primary" onClick={this.loadUsers}>Load Users</button>
           <Link to={'/new_user'} className="btn btn-success">Create New User</Link>
         </div>
-        <button className="btn btn-info" onClick={this.checkState}>Check State</button>
+        {/* <button className="btn btn-info" onClick={this.checkState}>Check State</button> */}
       </div>
     )
   }
